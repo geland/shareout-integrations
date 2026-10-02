@@ -10,6 +10,8 @@ FILES = [
     '.codex-plugin/plugin.json', '.claude-plugin/plugin.json',
     'skills/shareout/SKILL.md', 'skills/shareout/agents/openai.yaml',
     'assets/icon.svg', 'README.md', 'LICENSE',
+    'docs/distribution.md', 'configs/codex.toml', 'configs/cursor.json',
+    'configs/opencode.json', 'configs/stdio.json', 'configs/vscode.json',
 ]
 version = json.loads((ROOT / 'plugin.json').read_text())['version']
 out = ROOT / 'dist' / f'shareout-plugin-{version}.zip'
