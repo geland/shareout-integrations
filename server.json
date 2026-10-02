@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.shareout/shareout",
+  "title": "Shareout",
+  "description": "Publish HTML pages, collect review comments, and revise at the same link.",
+  "version": "0.6.0",
+  "websiteUrl": "https://shareout.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shareout.io/mcp"
+    }
+  ]
+}

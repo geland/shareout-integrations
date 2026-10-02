@@ -1,0 +1,20 @@
+{
+  "name": "shareout",
+  "interface": {
+    "displayName": "Shareout"
+  },
+  "plugins": [
+    {
+      "name": "shareout",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "shareout",
+  "version": "0.1.0",
+  "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
+  "author": {
+    "name": "Shareout",
+    "url": "https://shareout.io"
+  },
+  "homepage": "https://shareout.io/agents",
+  "repository": "https://github.com/geland/shareout-integrations",
+  "license": "MIT",
+  "keywords": [
+    "shareout",
+    "publishing",
+    "html",
+    "reports",
+    "proposals",
+    "review",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Shareout",
+    "shortDescription": "Share agent-made work with people",
+    "longDescription": "Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. A Shareout account is required. Publishing through hosted MCP also requires a host that can upload local files over HTTP.",
+    "developerName": "Shareout",
+    "category": "Productivity",
+    "websiteURL": "https://shareout.io",
+    "defaultPrompt": [
+      "Publish this HTML page and give me a link to share.",
+      "Read the review comments on my Shareout proposal.",
+      "Update this Shareout page while keeping its existing link."
+    ],
+    "brandColor": "#FF9678",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
+  }
+}

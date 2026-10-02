@@ -1,0 +1,24 @@
+{
+  "name": "shareout",
+  "version": "0.1.0",
+  "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
+  "author": {
+    "name": "Shareout",
+    "url": "https://shareout.io"
+  },
+  "homepage": "https://shareout.io/agents",
+  "repository": "https://github.com/geland/shareout-integrations",
+  "license": "MIT",
+  "keywords": [
+    "shareout",
+    "publishing",
+    "html",
+    "reports",
+    "proposals",
+    "review",
+    "mcp"
+  ],
+  "displayName": "Shareout",
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://shareout.io/agents"
+}

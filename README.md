@@ -1,0 +1,76 @@
+# Shareout
+
+Your agent made it. Share it out.
+
+Publish an HTML report, proposal, walkthrough, or interactive page. Share a link, collect feedback, and revise the page at the same address.
+
+[Try a shared page](https://shareout.io/d/cujufgdheurd) · [Connect your agent](https://shareout.io/agents) · [Templates](https://shareout.io/templates/)
+
+This repository contains the public plugin, skill, and connection configurations. The hosted service and standalone CLI are maintained separately. Repository installation is available independently of curated directory approval; see [distribution status](docs/distribution.md).
+
+## Claude Code
+
+```sh
+claude plugin marketplace add geland/shareout-integrations
+claude plugin install shareout@shareout
+```
+
+The plugin includes the hosted MCP connection and a short publishing skill. Connect your Shareout account through the host's OAuth flow. In Claude web or desktop, you can also add `https://shareout.io/mcp` as a custom connector where your plan supports it.
+
+## Codex
+
+```sh
+codex plugin marketplace add geland/shareout-integrations
+codex plugin add shareout@shareout
+```
+
+For an MCP-only connection, merge [configs/codex.toml](configs/codex.toml) into your Codex configuration and run `codex mcp login shareout`. This repository is a community-installable source; it does not imply approval in the public ChatGPT/Codex directory.
+
+## Skills CLI / skills.sh
+
+```sh
+npx skills add geland/shareout-integrations --skill shareout
+```
+
+Choose your agent when prompted. This installs the skill; connect the MCP separately or use the CLI. Avoid installing the same skill again if your plugin already supplies it. skills.sh discovers skills through its CLI's install telemetry; a repository does not imply a directory ranking or listing.
+
+## OpenCode
+
+Merge [configs/opencode.json](configs/opencode.json) into your `opencode.json`, preserving existing settings. Then:
+
+```sh
+opencode mcp auth shareout
+```
+
+Install the skill with the Skills CLI if desired. OpenCode uses `mcp`, while other clients may use `mcpServers`; the files are deliberately separate.
+
+## Cursor and VS Code / GitHub Copilot
+
+Cursor accepts the portable Agent Plugins package in this repository. For an MCP-only connection, merge [configs/cursor.json](configs/cursor.json) into `.cursor/mcp.json`.
+
+VS Code accepts the repository's [.mcp.json](.mcp.json) at your project root. [configs/vscode.json](configs/vscode.json) provides the legacy `.vscode/mcp.json` form. Start the server from the MCP settings and connect your account. These are connection configurations, not claims of curated marketplace acceptance.
+
+## Local CLI and MCP
+
+The standalone CLI reads files directly from disk. Get it from [Shareout Downloads](https://shareout.io/download), then connect it using **Connect your agent** in the Shareout console. No Node, npm, or Go runtime is required for the CLI.
+
+```sh
+shareout doctor --json
+shareout mcp
+```
+
+[configs/stdio.json](configs/stdio.json) is a reference for hosts using `mcpServers`. Use the executable's full path if your desktop app cannot find `shareout`. Prefer either a local or hosted MCP connection for a task, rather than enabling both.
+
+## What the host needs
+
+- A Shareout account. Signup requires email; an owner-issued setup link lets a local agent connect without its own inbox.
+- Hosted MCP uses OAuth with PKCE, or an existing API key passed privately as a bearer header.
+- **Publishing through hosted MCP requires HTTP file transfer in addition to MCP.** The server prepares a short-lived upload URL; the host uploads the file directly, then publishes its upload ID. A host that cannot transfer files can still use the read/manage tools. Use local MCP or the CLI for publishing in that case.
+- Document bytes never go in MCP arguments. Eight tools expose compact, paginated results. The skill does not repeat their schemas or load every template.
+- Use self-contained HTML and relative assets. See the [authoring rules](https://shareout.io/guidelines.md).
+
+## Package development
+
+Run `python3 scripts/validate.py` with `jsonschema` and `PyYAML` installed, and `claude plugin validate .claude-plugin/plugin.json --strict` when Claude Code is available. Build the review ZIP with `python3 scripts/package.py`; it uses an explicit file allowlist. Generated ZIPs live in ignored `dist/`.
+
+The MIT license covers these integration files. It does not license the hosted service, grant rights to the Shareout name or marks, or change the service's terms. Report packaging issues through this repository; never include API keys, private documents, or bearer links in an issue.

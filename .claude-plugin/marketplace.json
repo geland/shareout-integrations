@@ -1,0 +1,15 @@
+{
+  "name": "shareout",
+  "owner": {
+    "name": "Shareout",
+    "url": "https://shareout.io"
+  },
+  "plugins": [
+    {
+      "name": "shareout",
+      "source": "./",
+      "description": "Publish agent-made pages, collect feedback, and revise at the same link."
+    }
+  ],
+  "description": "Shareout publishing tools and workflows for agents."
+}
