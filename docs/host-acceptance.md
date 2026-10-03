@@ -22,3 +22,8 @@ This test used API-key authentication. Interactive OAuth, real browser rendering
 - Claude Code 2.1.284: package installation and strict manifest validation passed previously. Current `claude auth status` reports signed out; full agent workflow and OAuth remain pending.
 - OpenCode 1.17.11: prior production MCP connection passed. Current provider credential list is empty; a model-driven end-to-end run remains pending.
 - ChatGPT, Claude web, Cursor, and VS Code: full host workflow remains pending. Do not infer a pass from Codex's result.
+
+
+## OpenAI publisher portal: partial OAuth acceptance (2026-10-03)
+
+The portal accepted plugin draft 0.1.4, passed metadata and skill checks, imported all review scenarios, and verified shareout.io ownership. Its OAuth discovery and dynamic registration reached Shareout. The first authorization request exposed a 512-character state limit; the service was corrected to accept up to 4,096 UTF-8 bytes while retaining redirect, PKCE, resource, scope, and consent checks. The retried live flow displays the expected account consent screen. Account authorization and authenticated tool discovery remain pending; this is not a completed host workflow or directory submission.
