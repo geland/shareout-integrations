@@ -1,8 +1,9 @@
 {
   "name": "shareout",
   "owner": {
-    "name": "Shareout",
-    "url": "https://shareout.io"
+    "name": "Greg Eland",
+    "url": "https://gregeland.com",
+    "email": "hello@gregeland.com"
   },
   "plugins": [
     {

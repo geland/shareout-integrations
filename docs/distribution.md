@@ -36,6 +36,12 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Name:** Shareout
 
+**Publisher:** Greg Eland
+
+**Support email:** hello@gregeland.com
+
+**Support:** https://github.com/geland/shareout-integrations#support
+
 **Short description:** Share agent-made work with people.
 
 **Description:** Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. Named links can expire or be revoked. A Shareout account is required. Hosted publishing needs a host that can transfer local files over HTTP; local MCP and the standalone CLI read files directly from disk.
@@ -48,7 +54,7 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Live example:** https://shareout.io/d/cujufgdheurd
 
-Publisher verification, support contact, public policies, and reviewer credentials must be accurate before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
+The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Directory identity verification, public policies, and reviewer credentials still need completion before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
 
 ## Sources
 

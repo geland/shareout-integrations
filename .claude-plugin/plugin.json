@@ -1,10 +1,11 @@
 {
   "name": "shareout",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
   "author": {
-    "name": "Shareout",
-    "url": "https://shareout.io"
+    "name": "Greg Eland",
+    "url": "https://gregeland.com",
+    "email": "hello@gregeland.com"
   },
   "homepage": "https://shareout.io/agents",
   "repository": "https://github.com/geland/shareout-integrations",
@@ -20,5 +21,6 @@
   ],
   "displayName": "Shareout",
   "icon": "./assets/icon.svg",
-  "documentationUrl": "https://shareout.io/agents"
+  "documentationUrl": "https://shareout.io/agents",
+  "supportUrl": "https://github.com/geland/shareout-integrations#support"
 }

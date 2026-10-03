@@ -1,11 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "shareout",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
   "author": {
-    "name": "Shareout",
-    "url": "https://shareout.io"
+    "name": "Greg Eland",
+    "url": "https://gregeland.com",
+    "email": "hello@gregeland.com"
   },
   "homepage": "https://shareout.io/agents",
   "repository": "https://github.com/geland/shareout-integrations",
@@ -25,7 +26,7 @@
         "displayName": "Shareout",
         "shortDescription": "Share agent-made work with people",
         "longDescription": "Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. A Shareout account is required. Publishing through hosted MCP also requires a host that can upload local files over HTTP.",
-        "developerName": "Shareout",
+        "developerName": "Greg Eland",
         "category": "Productivity",
         "websiteURL": "https://shareout.io",
         "defaultPrompt": [
@@ -35,7 +36,8 @@
         ],
         "brandColor": "#FF9678",
         "composerIcon": "./assets/icon.svg",
-        "logo": "./assets/icon.svg"
+        "logo": "./assets/icon.svg",
+        "supportURL": "https://github.com/geland/shareout-integrations#support"
       }
     }
   }

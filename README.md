@@ -69,6 +69,12 @@ shareout mcp
 - Document bytes never go in MCP arguments. Eight tools expose compact, paginated results. The skill does not repeat their schemas or load every template.
 - Use self-contained HTML and relative assets. See the [authoring rules](https://shareout.io/guidelines.md).
 
+## Support
+
+Shareout is published by [Greg Eland](https://gregeland.com). For account or service help, email [hello@gregeland.com](mailto:hello@gregeland.com). For plugin installation issues, you can also [open an issue](https://github.com/geland/shareout-integrations/issues).
+
+Never post API keys, private documents, or bearer links in a public issue. Describe the problem and include a redacted error message when available.
+
 ## Package development
 
 Run `python3 scripts/validate.py` with `jsonschema` and `PyYAML` installed, and `claude plugin validate .claude-plugin/plugin.json --strict` when Claude Code is available. Build the review ZIP with `python3 scripts/package.py`; it uses an explicit file allowlist. Generated ZIPs live in ignored `dist/`.
