@@ -46,7 +46,7 @@ Use the same workflow to record each host: normal connection UI, catalog lookup,
 - Enter reviewer credentials only in the portal's private review fields. Do not add credentials or reviewer sign-in instructions to a manifest, this repository, or a ZIP.
 - OpenAI requires a dedicated account that works without email/SMS codes, magic links, or MFA approval. The current Shareout browser sign-in does not meet that requirement. Do not fabricate a password, disable account protections, inject a browser session, or claim this gate has passed.
 - A recorded walkthrough URL is intentionally absent until an actual recording exists.
-- Portal sign-ins are complete. OpenAI blocks ZIP uploads until developer identity verification; the signed-in Claude account is Free and the portal requires a paid plan. These owner/account requirements remain open.
+- Portal sign-ins are complete. The publisher reports OpenAI identity verification completed; confirm the portal accepts it before upload. Claude directory submission is deferred at the owner’s request because the current personal account is Free.
 - Track submission IDs and decisions in `docs/distribution.md`. A valid ZIP and a public repository do not establish directory approval.
 
 Sources: [OpenAI submission](https://developers.openai.com/plugins/deploy/submission), [OpenAI authentication](https://developers.openai.com/plugins/build/auth), [Claude submission](https://claude.com/docs/plugins/submit).
