@@ -5,14 +5,14 @@ Updated 2026-10-02. A valid package is not a directory approval or a complete ho
 | Route | Current state | Next requirement |
 | --- | --- | --- |
 | Claude Code repository marketplace | Published; Claude Code 2.1.284 installed from GitHub; strict validation passes | Interactive OAuth and publish/update/revoke acceptance |
-| Codex repository marketplace | Published; Codex 0.155.1 discovered and installed the package | Interactive OAuth and publish/update/revoke acceptance |
+| Codex repository marketplace | Published; install check and full hosted API-key workflow passed in Codex 0.155.1 | Interactive OAuth and recorded browser/host demonstration |
 | skills.sh / Skills CLI | Published; Skills CLI discovered and installed the skill for OpenCode in a temporary project | Directory indexing is telemetry-driven; test telemetry was disabled |
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
 | Cursor | Portable Agent Plugin and MCP configuration prepared | Host acceptance and publisher-application sign-in |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.0` | Keep metadata aligned with releases |
-| ChatGPT / Codex public directory | Package prepared; not submitted | Publisher verification, public policy/support URLs, reviewer access without email codes, recorded demo, host test cases, portal login |
-| Claude directory | Package prepared; not submitted | Portal login, linked GitHub, publisher/data handling fields, plugin and connector reviews |
+| ChatGPT / Codex public directory | Package prepared; not submitted | Developer identity verification, reviewer access without email codes, recorded demo, interactive OAuth acceptance |
+| Claude directory | Package prepared; not submitted | Paid publisher account required; linked GitHub, publisher/data handling fields, plugin and connector reviews |
 | Smithery | Endpoint eligible for remote submission; not submitted | Publisher sign-in and OAuth compatibility test; its gateway documents CIMD while Shareout currently supports DCR |
 | Glama | Hosted connector route identified; not submitted | Sign-in/account required; submit the remote endpoint as a connector, not as an open-source server implementation |
 | PulseMCP | New submissions paused by the directory | Wait for submissions to reopen |
@@ -25,8 +25,8 @@ Updated 2026-10-02. A valid package is not a directory approval or a complete ho
 - Claude Code and Codex installation checks used isolated/local test scopes. The temporary Codex installation was removed afterward. Claude Code's separate MCP health check stopped at its project trust approval; it did not establish a connected session.
 - Skills CLI discovery and project-scoped OpenCode installation passed with test telemetry disabled. No claim of skills.sh indexing or ranking.
 - OpenCode's actual MCP connection returned `connected`. Its disposable empty workspace was deleted and key revoked. This check used API-key authentication, not the OAuth sign-in UI.
-- Production connection guide and agent discovery file link to the package. Worker `99c2e5db-a395-4402-a337-50cbff158c51` serves source `13d2ff4` at 100%; exact assets and registry proof verified. Service validation: typecheck, 82 Worker tests and source CI passed.
-- OpenAI, Claude, Cursor and Smithery portals require sign-in in the current browser. Glama's Add Server opens account registration/sign-in. None has received a curated submission.
+- Production policy/support pages, connection guide and agent discovery file verified live. Worker `908eb9e8-3bf0-4688-bb33-4d637dbcca27` serves source `1b26a08` at 100%. HTML matches source after excluding Cloudflare’s injected analytics beacon; the privacy policy explicitly discloses it. Typecheck, 82 Worker tests and exact-source CI passed; post-deploy MCP initialization and all eight tool definitions returned successfully.
+- OpenAI and Claude publisher sign-ins completed. OpenAI blocks uploads until developer identity verification is complete. Claude currently shows a Free account and requires Pro, Max, Team, or Enterprise for submissions. Cursor, Smithery and Glama still need their publisher account flows. None has received a curated submission.
 
 ## Host acceptance procedure
 
@@ -40,7 +40,11 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Support email:** hello@gregeland.com
 
-**Support:** https://github.com/geland/shareout-integrations#support
+**Support:** https://shareout.io/support
+
+**Privacy:** https://shareout.io/privacy
+
+**Terms:** https://shareout.io/terms
 
 **Short description:** Share agent-made work with people.
 
@@ -54,7 +58,9 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Live example:** https://shareout.io/d/cujufgdheurd
 
-The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Directory identity verification, public policies, and reviewer credentials still need completion before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
+The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Public policies are live. Directory identity verification and reviewer credentials still need completion before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
+
+The 0.1.3 package adds the public policy URLs and five positive/three negative scenarios. Fictional first/revised HTML files live in `examples/review/`; see [submission kit](submission-kit.md) for data-handling answers and remaining gates. Public policy URLs were verified after deployment. Cases are prepared, not a claim that every host has passed them.
 
 ## Sources
 

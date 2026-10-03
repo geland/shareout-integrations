@@ -17,8 +17,19 @@ for name in ['plugin.json', 'mcp.json', 'server.json']:
 plugin = json.loads((ROOT / 'plugin.json').read_text())
 for name in ['.claude-plugin/plugin.json', '.codex-plugin/plugin.json']:
     manifest = json.loads((ROOT / name).read_text())
-    for key in ['name', 'version', 'description', 'homepage', 'repository', 'license']:
+    for key in ['name', 'version', 'description', 'author', 'homepage', 'repository', 'license']:
         assert manifest[key] == plugin[key], f'{name}: divergent {key}'
+
+openai = plugin['extensions']['com.openai']
+codex = json.loads((ROOT / '.codex-plugin/plugin.json').read_text())
+assert codex['interface'] == openai['interface'], 'Divergent OpenAI listing metadata'
+assert codex['extensions']['com.openai']['review'] == openai['review'], 'Divergent review cases'
+cases = openai['review']['test_cases']
+assert len(cases['positive']) == 5 and len(cases['negative']) == 3
+for case in cases['positive']:
+    assert all(case.get(key) for key in ['description', 'prompt', 'tools_triggered', 'expected_behavior'])
+for case in cases['negative']:
+    assert all(case.get(key) for key in ['description', 'prompt', 'expected_behavior'])
 
 skill = (ROOT / 'skills/shareout/SKILL.md').read_text()
 frontmatter = yaml.safe_load(skill.split('---', 2)[1])

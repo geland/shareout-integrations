@@ -75,6 +75,8 @@ Shareout is published by [Greg Eland](https://gregeland.com). For account or ser
 
 Never post API keys, private documents, or bearer links in a public issue. Describe the problem and include a redacted error message when available.
 
+See [Privacy](https://shareout.io/privacy), [Terms](https://shareout.io/terms), and [Support](https://shareout.io/support).
+
 ## Package development
 
 Run `python3 scripts/validate.py` with `jsonschema` and `PyYAML` installed, and `claude plugin validate .claude-plugin/plugin.json --strict` when Claude Code is available. Build the review ZIP with `python3 scripts/package.py`; it uses an explicit file allowlist. Generated ZIPs live in ignored `dist/`.
