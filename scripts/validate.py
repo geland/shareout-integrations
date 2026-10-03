@@ -21,6 +21,7 @@ for name in ['.claude-plugin/plugin.json', '.codex-plugin/plugin.json']:
         assert manifest[key] == plugin[key], f'{name}: divergent {key}'
 
 openai = plugin['extensions']['com.openai']
+assert 0 < len(openai['interface']['shortDescription']) <= 30, 'OpenAI listing subtitle must be 1-30 characters'
 codex = json.loads((ROOT / '.codex-plugin/plugin.json').read_text())
 assert codex['interface'] == openai['interface'], 'Divergent OpenAI listing metadata'
 assert codex['extensions']['com.openai']['review'] == openai['review'], 'Divergent review cases'
