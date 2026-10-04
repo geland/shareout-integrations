@@ -44,7 +44,7 @@ Use the same workflow to record each host: normal connection UI, catalog lookup,
 - Public policy/support URLs are live and identify Greg Eland. Verified 2026-10-02.
 - Run the cases in each target host, with its production connection. An API-key test does not establish interactive OAuth acceptance.
 - Enter reviewer credentials only in the portal's private review fields. Do not add credentials or reviewer sign-in instructions to a manifest, this repository, or a ZIP.
-- OpenAI requires a dedicated account that works without email/SMS codes, magic links, or MFA approval. The current Shareout browser sign-in does not meet that requirement. Do not fabricate a password, disable account protections, inject a browser session, or claim this gate has passed.
+- OpenAI requires a dedicated account that works without email/SMS codes, magic links, or MFA approval. An isolated demo account now meets that requirement: production login was verified and its credentials saved only in the private portal on 2026-10-03. Customer email-link authentication remains unchanged. Do not put demo credentials in a package or inject browser sessions.
 - A recorded walkthrough URL is intentionally absent until an actual recording exists.
 - Portal sign-ins are complete. OpenAI confirmed individual developer verification and accepted the initial draft upload on 2026-10-03. Claude directory submission is deferred at the owner’s request because the current personal account is Free.
 - Track submission IDs and decisions in `docs/distribution.md`. A valid ZIP and a public repository do not establish directory approval.

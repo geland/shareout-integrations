@@ -58,7 +58,7 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Live example:** https://shareout.io/d/cujufgdheurd
 
-The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Public policies are live. Publisher verification is confirmed; MCP setup and reviewer credentials still need completion before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
+The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Public policies are live. Publisher verification is confirmed; MCP authorization/discovery and private reviewer credentials are now complete. The actual host walkthrough/recording and generic tool review findings remain before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
 
 The 0.1.3 package adds the public policy URLs and five positive/three negative scenarios. Fictional first/revised HTML files live in `examples/review/`; see [submission kit](submission-kit.md) for data-handling answers and remaining gates. Public policy URLs were verified after deployment. Cases are prepared, not a claim that every host has passed them.
 
@@ -73,3 +73,8 @@ The 0.1.3 package adds the public policy URLs and five positive/three negative s
 - [Smithery publishing](https://smithery.ai/docs/build/publish)
 - [Glama connector submissions](https://glama.ai/mcp/faq)
 - [PulseMCP submission notice](https://www.pulsemcp.com/)
+
+
+### Review readiness update — 2026-10-03
+
+Service MCP 0.6.1 and isolated reviewer demo access are live. OpenAI's private reviewer fields were saved successfully, and the new tool definitions were rescanned. Three generic further-review notices remain. ChatGPT host sign-in and the actual recorded review workflow are still needed; no final submission or approval is claimed. The integration package remains 0.1.4 and the official MCP Registry listing remains 0.6.0 until a separate registry update.
