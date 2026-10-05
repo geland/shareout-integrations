@@ -68,3 +68,7 @@ Recovery: a fresh ChatGPT conversation using the existing isolated demo connecti
 The clean ChatGPT run published fictional document un5rz9pma662 from a native attachment, revised it in place, read empty feedback, revoked its Review team link, and verified both versions remain. Supplementary recipient footage shows version 1 and denied access. Version 2 is shown as an explicitly labeled verification screenshot from the verified run, not as video footage. The supplemental link was also revoked and version 2 remains active.
 
 The 6:01 edited walkthrough labels all five positive and three negative cases. The unauthorized-access case is explicitly a ChatGPT safety block before Shareout was called; it is not evidence of a Shareout tool refusal. The video combines genuine recorded sessions, trims idle portions, omits audio, and labels the separate recipient demonstration and still image. Its accessible URL is included in the 0.1.5 manifest. Final portal submission remains a separate step.
+
+## Submitted (2026-10-05)
+
+The owner completed attestations and submitted the final package. Independent publisher UI verification shows In review, Not published, and Configured. Portal associated-app version label is 1.0.0; portable package version is 0.1.5. This confirms submission, not approval or publication.

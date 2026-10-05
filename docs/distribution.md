@@ -11,12 +11,16 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | Cursor | Portable Agent Plugin and MCP configuration prepared | Host acceptance and publisher-application sign-in |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.0` | Keep metadata aligned with releases |
-| ChatGPT / Codex public directory | 0.1.4 draft uploaded; identity/domain verified; metadata and skill checks passed | Reviewer access saved; native ChatGPT publication passed; finish remaining cases, recording and draft refresh |
+| ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | Endpoint eligible for remote submission; not submitted | Publisher sign-in and OAuth compatibility test; its gateway documents CIMD while Shareout currently supports DCR |
 | Glama | Hosted connector route identified; not submitted | Sign-in/account required; submit the remote endpoint as a connector, not as an open-source server implementation |
 | PulseMCP | New submissions paused by the directory | Wait for submissions to reopen |
 | GitHub public MCP directory | Curated surface investigated; no submission made | Establish the current intake route; registry publication alone does not establish a GitHub listing |
+
+## Current OpenAI submission
+
+The owner completed final attestations and submission on 2026-10-05. The publisher portal independently shows Shareout “Version 1.0.0 · In review”, “Not published”, and “Configured”. The uploaded portable package is 0.1.5; the portal uses a separate associated-app version label. The final ZIP includes the accessible 6:01 labeled walkthrough URL, verified by anonymous HTTP 200 and SHA-256 match. Reviewer credentials were saved privately. Non-blocking MCP findings remain for reviewers. Earlier dated notes below describe the path to submission and are superseded by this status.
 
 ## Verified evidence
 
