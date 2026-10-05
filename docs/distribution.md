@@ -14,7 +14,7 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | [Published](https://smithery.ai/servers/gregaeland/shareout) 2026-10-05; production 0.6.2 and all eight tools discovered | Full publish/update/revoke through Smithery remains a separate host acceptance test |
-| Glama | Signed in; profile completion pending terms acceptance | Complete profile, then submit the hosted connector |
+| Glama | [Registry-imported listing exists](https://glama.ai/mcp/connectors/io.shareout/shareout); onboarding complete; currently Unhealthy | Claim namespace via domain verification, then configure isolated test profile for health checks |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
 | Docker MCP Catalog | [Draft PR #5462](https://github.com/docker/mcp-registry/pull/5462) opened; official validator and catalog generation passed | Docker-specific authenticated OAuth and tool test; then request review |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
@@ -103,3 +103,5 @@ Service MCP 0.6.1 and isolated reviewer demo access are live. OpenAI's private r
 Package 0.1.5 prepares native ChatGPT file-input guidance for deployed MCP 0.6.2. Native attachment publication and anonymous exact-byte recipient access passed; see [host acceptance](host-acceptance.md). The portal remains on draft 0.1.4 until a replacement package is uploaded; no directory approval is implied.
 
 Follow-up: Docker Desktop 29.5.3 is running. PR #5462 remains open/draft, review required, with no CI checks reported. Starting Docker OAuth awaits explicit approval for isolated demo workspace read/write access; the prior approval named only Smithery and Vercel.
+
+Glama follow-up: Google-backed account onboarding completed. Submission identified an existing registry-imported io.shareout/shareout connector, avoiding a duplicate. Public listing reports Unhealthy and OAuth Works in Glama; this badge does not establish our own authenticated test. Domain ownership can be verified using /.well-known/glama.json or a TXT record. Claim and isolated health-check access await explicit approval; no verification file or test credentials have been published.
