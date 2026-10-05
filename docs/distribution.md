@@ -10,13 +10,27 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
 | Cursor | Portable Agent Plugin and MCP configuration prepared | Host acceptance and publisher-application sign-in |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
-| Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.0` | Keep metadata aligned with releases |
+| Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.2` | Keep metadata aligned with releases |
 | ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | Endpoint eligible for remote submission; not submitted | Publisher sign-in and OAuth compatibility test; its gateway documents CIMD while Shareout currently supports DCR |
 | Glama | Hosted connector route identified; not submitted | Sign-in/account required; submit the remote endpoint as a connector, not as an open-source server implementation |
-| PulseMCP | New submissions paused by the directory | Wait for submissions to reopen |
+| PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
+| Docker MCP Catalog | [Draft PR #5462](https://github.com/docker/mcp-registry/pull/5462) opened; official validator and catalog generation passed | Docker-specific authenticated OAuth and tool test; then request review |
+| Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
+| Vercel Connect | Service-provider submission route confirmed; publisher tab requires sign-in | Complete service metadata, connection test, and review submission |
+| mcp.so | Current intake requires a $39 payment | No paid submission authorized or purchased |
 | GitHub public MCP directory | Curated surface investigated; no submission made | Establish the current intake route; registry publication alone does not establish a GitHub listing |
+
+## Additional distribution pass — 2026-10-05
+
+Official MCP Registry 0.6.2 was published through the existing domain-owned identity and independently read back as active and latest. Official plugin, MCP and registry schemas all pass. The submitted OpenAI 0.1.5 release assets were not replaced.
+
+Awesome MCP Servers accepted the free Shareout submission with the hosted endpoint, OAuth authentication, registry name, documentation URL and hello@gregeland.com contact. The page explicitly confirmed successful submission and review within two weeks; this is not yet an approved listing.
+
+Smithery, Glama and Cursor publisher pages require sign-in; the tabs are prepared for the owner. Vercel Connect opened service submissions on September 29 and supports DCR, so it is an appropriate route distinct from the traditional Vercel integration marketplace. Its submission dashboard also requires sign-in. PulseMCP remains paused. No paid aggregator placement has been purchased.
+
+Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462) contains the three required remote-server files. The official validator and catalog generator passed. Docker MCP 0.42.2 loaded the isolated catalog and reached a 401 without OAuth credentials, as expected; authenticated host acceptance remains pending. No checks were reported immediately after opening the draft.
 
 ## Current OpenAI submission
 
@@ -25,7 +39,7 @@ The owner completed final attestations and submission on 2026-10-05. The publish
 ## Verified evidence
 
 - Public source: [geland/shareout-integrations](https://github.com/geland/shareout-integrations). Initial package CI [37078527842](https://github.com/geland/shareout-integrations/actions/runs/37078527842) passed.
-- [Official Registry version 0.6.0](https://registry.modelcontextprotocol.io/v0.1/servers/io.shareout%2Fshareout/versions/0.6.0): published through shareout.io domain verification, then independently read back. This is not endorsement by the registry or an automatic curated listing elsewhere.
+- [Official Registry version 0.6.2](https://registry.modelcontextprotocol.io/v0.1/servers/io.shareout%2Fshareout/versions/0.6.2): published through shareout.io domain verification, then independently read back. This is not endorsement by the registry or an automatic curated listing elsewhere.
 - Claude Code and Codex installation checks used isolated/local test scopes. The temporary Codex installation was removed afterward. Claude Code's separate MCP health check stopped at its project trust approval; it did not establish a connected session.
 - Skills CLI discovery and project-scoped OpenCode installation passed with test telemetry disabled. No claim of skills.sh indexing or ranking.
 - OpenCode's actual MCP connection returned `connected`. Its disposable empty workspace was deleted and key revoked. This check used API-key authentication, not the OAuth sign-in UI.
@@ -62,7 +76,7 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Live example:** https://shareout.io/d/cujufgdheurd
 
-The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Public policies are live. Publisher verification is confirmed; MCP authorization/discovery and private reviewer credentials are now complete. The actual host walkthrough/recording and generic tool review findings remain before submission. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
+The publisher and support contact were confirmed on 2026-10-02. Cloudflare confirms the support address has an enabled forwarding rule and a verified destination. Public policies are live. Publisher verification is confirmed; MCP authorization/discovery and private reviewer credentials are now complete. The host walkthrough and recording are complete and OpenAI review is pending; generic tool findings were non-blocking. Do not place private review credentials in this repository or ZIP. The live example is not a substitute for a recorded host demo.
 
 The 0.1.3 package adds the public policy URLs and five positive/three negative scenarios. Fictional first/revised HTML files live in `examples/review/`; see [submission kit](submission-kit.md) for data-handling answers and remaining gates. Public policy URLs were verified after deployment. Cases are prepared, not a claim that every host has passed them.
 
@@ -77,6 +91,9 @@ The 0.1.3 package adds the public policy URLs and five positive/three negative s
 - [Smithery publishing](https://smithery.ai/docs/build/publish)
 - [Glama connector submissions](https://glama.ai/mcp/faq)
 - [PulseMCP submission notice](https://www.pulsemcp.com/)
+- [Awesome MCP Servers submission](https://mcpservers.org/submit)
+- [Vercel Connect submission launch](https://vercel.com/changelog/vercel-connect-service-submissions) and [provider requirements](https://vercel.com/docs/connect/providers)
+- [mcp.so paid intake](https://mcp.so/submit?type=server)
 
 
 ### Review readiness update — 2026-10-03
