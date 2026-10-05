@@ -1,6 +1,16 @@
 # Host acceptance evidence
 
-Updated 2026-10-03 (Pacific). Package install, authenticated transport, interactive OAuth, and a complete host workflow are separate checks.
+Updated 2026-10-05 (Pacific). Package install, authenticated transport, interactive OAuth, and a complete host workflow are separate checks.
+
+## ChatGPT personal test plugin: OAuth and catalog passed; publishing blocked (2026-10-05)
+
+After restarting the in-app browser, the Shareout Review personal test plugin completed OAuth against the isolated reviewer demo workspace. ChatGPT displayed the connected account. A template request returned Status report and its brief, preview, exemplar, and theme links. This personal test plugin is separate from the publisher submission draft.
+
+The fictional `examples/review/weekly-update-v1.html` attachment was submitted with instructions to publish unchanged as `index.html`, use link-only visibility, and create a Review team link expiring in 14 days. ChatGPT prepared an upload and called publish without completing the byte transfer. The publish tool returned `upload_state`: “Upload is not ready, or has already been claimed.” No successful publication or recipient link was reported.
+
+ChatGPT initially attributed failure to an unreachable upload endpoint. Asked for redacted error details, it corrected that account: no HTTP upload request or response status was observed. Treat this as a missing file-transfer step, not evidence of an outage, browser blocking, or an HTTP network failure. Revision and revocation cases remain blocked on a successful publication. No acceptance recording or final directory submission was completed.
+
+The next compatibility path to evaluate is ChatGPT's [documented file inputs](https://developers.openai.com/plugins/reference#file-apis): host-authorized file references with `download_url` and `file_id`, declared through `openai/fileParams`. This is not implemented or deployed. Any implementation must keep document bytes outside model tool arguments, validate retrieval destinations, bound downloads, and preserve existing publishing authorization and validation.
 
 ## Codex CLI 0.155.1: hosted API-key workflow passed
 
