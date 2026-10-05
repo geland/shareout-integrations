@@ -52,3 +52,11 @@ Production MCP/CLI 0.6.2 accepts native file references through shareout_prepare
 ChatGPT hydrates file IDs using regional Microsoft Blob Storage accounts. The service allows files.oaiusercontent.com and three exact observed accounts (northeu, northcentralus, southeastus3 under the oaisdmntpr prefix), rejects redirects and other hosts, and enforces 20 seconds and 10 MiB/workspace byte limits. Unrecognized future regions fail closed. No broader hostname-family policy was applied.
 
 This resolves the earlier publication blocker for the tested native host. Native-host revision/revocation scenarios, a real recording, publisher draft refresh and final submission remain separate work. Service tests exercise native publication and optimistic updates. Package 0.1.5 includes updated metadata and skill guidance; it is not yet a submitted directory version.
+
+## Native revision and negative cases (2026-10-05)
+
+Production `eb2bef8` supports the explicitly approved bounded regional native-file host family. ChatGPT staged the v2 attachment; a publish with creation-only options was safely rejected. After correcting the arguments, the existing ready upload published version 2 without conflict. An independent anonymous request to the original recipient link returned HTTP 200 and exactly matched all 1,298 fixture bytes, including Owner: Avery. Skill guidance now explicitly omits title, visibility and link options on updates.
+
+The feedback tool returned zero comments and ChatGPT reported this without inventing feedback or writing. It refused inline HTML/base64 publication. The other-account scenario was blocked by ChatGPT's safety layer before tool use, so no plugin-specific explanatory refusal was observed. Quoted malicious reviewer text was summarized without tools or writes.
+
+During the named-link revocation case, ChatGPT displayed Conversation not found after approval. Independent checks still returned HTTP 200 for the recipient and existing grant; revocation has not passed. A real recording and final publisher submission remain outstanding.

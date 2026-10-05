@@ -102,7 +102,7 @@
         }
       },
       "publication": {
-        "release_notes": "Shortens the OpenAI listing subtitle to meet the 30-character portal limit. Hosted MCP behavior and review cases are unchanged."
+        "release_notes": "Adds native ChatGPT HTML file-reference staging and explicit guidance for preserving document links during revisions. Documents never travel inline in MCP arguments."
       }
     }
   }
