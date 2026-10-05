@@ -8,17 +8,17 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | Codex repository marketplace | Published; install check and full hosted API-key workflow passed in Codex 0.155.1 | Interactive OAuth and recorded browser/host demonstration |
 | skills.sh / Skills CLI | Published; Skills CLI discovered and installed the skill for OpenCode in a temporary project | Directory indexing is telemetry-driven; test telemetry was disabled |
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
-| Cursor | Portable Agent Plugin and MCP configuration prepared | Host acceptance and publisher-application sign-in |
+| Cursor | Signed in; publisher application filled out | Owner confirmation of Publisher Terms before final submission; host acceptance remains separate |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.2` | Keep metadata aligned with releases |
 | ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
-| Smithery | Endpoint eligible for remote submission; not submitted | Publisher sign-in and OAuth compatibility test; its gateway documents CIMD while Shareout currently supports DCR |
-| Glama | Hosted connector route identified; not submitted | Sign-in/account required; submit the remote endpoint as a connector, not as an open-source server implementation |
+| Smithery | [Published](https://smithery.ai/servers/gregaeland/shareout) 2026-10-05; production 0.6.2 and all eight tools discovered | Full publish/update/revoke through Smithery remains a separate host acceptance test |
+| Glama | Signed in; profile completion pending terms acceptance | Complete profile, then submit the hosted connector |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
 | Docker MCP Catalog | [Draft PR #5462](https://github.com/docker/mcp-registry/pull/5462) opened; official validator and catalog generation passed | Docker-specific authenticated OAuth and tool test; then request review |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
-| Vercel Connect | Service-provider submission route confirmed; publisher tab requires sign-in | Complete service metadata, connection test, and review submission |
+| Vercel Connect | Draft prepared with icon, target, OAuth discovery and test connector | Built-in browser blocked Shareout OAuth redirect with ERR_BLOCKED_BY_CLIENT; owner handoff requested |
 | mcp.so | Current intake requires a $39 payment | No paid submission authorized or purchased |
 | GitHub public MCP directory | Curated surface investigated; no submission made | Establish the current intake route; registry publication alone does not establish a GitHub listing |
 
@@ -28,7 +28,7 @@ Official MCP Registry 0.6.2 was published through the existing domain-owned iden
 
 Awesome MCP Servers accepted the free Shareout submission with the hosted endpoint, OAuth authentication, registry name, documentation URL and hello@gregeland.com contact. The page explicitly confirmed successful submission and review within two weeks; this is not yet an approved listing.
 
-Smithery, Glama and Cursor publisher pages require sign-in; the tabs are prepared for the owner. Vercel Connect opened service submissions on September 29 and supports DCR, so it is an appropriate route distinct from the traditional Vercel integration marketplace. Its submission dashboard also requires sign-in. PulseMCP remains paused. No paid aggregator placement has been purchased.
+The owner completed sign-ins. Smithery successfully scanned production 0.6.2 and discovered all eight tools; its public listing shows Published Oct 5, 2026. Optional resource/prompt discovery returned method-not-found warnings without blocking publication. Cursor application metadata is prepared and awaits explicit Publisher Terms acceptance. Glama profile completion likewise awaits terms acceptance. Vercel Connect has a locally saved service draft, SVG icon, hosted target, successful OAuth discovery and automatic registration, and a test connector in the Elandry team. Its OAuth redirect hit a built-in-browser ERR_BLOCKED_BY_CLIENT page, so token testing and final submission remain pending user handoff. The owner explicitly approved isolated demo read/write OAuth tests for Smithery and Vercel. PulseMCP remains paused. No paid aggregator placement has been purchased.
 
 Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462) contains the three required remote-server files. The official validator and catalog generator passed. Docker MCP 0.42.2 loaded the isolated catalog and reached a 401 without OAuth credentials, as expected; authenticated host acceptance remains pending. No checks were reported immediately after opening the draft.
 
