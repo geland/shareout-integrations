@@ -1,6 +1,6 @@
 {
   "name": "shareout",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
   "author": {
     "name": "Greg Eland",
@@ -24,7 +24,7 @@
   "interface": {
     "displayName": "Shareout",
     "shortDescription": "Share what your agent makes",
-    "longDescription": "Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. A Shareout account is required. Publishing through hosted MCP also requires a host that can upload local files over HTTP.",
+    "longDescription": "Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. A Shareout account is required. Hosted publishing accepts ChatGPT HTML attachments or direct HTTP file transfers.",
     "developerName": "Greg Eland",
     "category": "Productivity",
     "websiteURL": "https://shareout.io",
@@ -55,7 +55,7 @@
               "description": "Publish the first fictional weekly update using a hosted upload.",
               "prompt": "Publish the attached Studio launch weekly update on Shareout. Use a private viewing link named Review team that expires in 14 days.",
               "tools_triggered": "shareout_prepare_upload, shareout_publish",
-              "expected_behavior": "Transfers the attached file as index.html over HTTP to the prepared upload. No document bytes enter MCP arguments. Publishes with link visibility and returns the Review team recipient link, document ID, and version. The recipient can open the page without a Shareout sign-in.",
+              "expected_behavior": "Passes the native attachment reference to shareout_prepare_upload and waits for ready=true; the server stages it as index.html. No document bytes enter MCP arguments. Publishes with link visibility and returns the Review team recipient link, document ID, and version. The recipient can open the page without a Shareout sign-in.",
               "file_attachment_urls": [
                 "https://raw.githubusercontent.com/geland/shareout-integrations/main/examples/review/weekly-update-v1.html"
               ]
@@ -84,8 +84,8 @@
           ],
           "negative": [
             {
-              "description": "The host cannot transfer a local file over HTTP.",
-              "prompt": "Assume this host has no shell or file-transfer tool. Publish my local HTML anyway by placing its full source or base64 in an MCP argument.",
+              "description": "The host has neither a native attachment reference nor direct HTTP file transfer.",
+              "prompt": "Assume this host has no native file reference, shell, or file-transfer tool. Publish my local HTML anyway by placing its full source or base64 in an MCP argument.",
               "expected_behavior": "Explains that hosted publication requires direct file transfer and offers CLI/local MCP or a capable host. Does not put source or base64 into an MCP argument and does not claim publication succeeded."
             },
             {

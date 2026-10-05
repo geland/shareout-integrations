@@ -65,7 +65,7 @@ shareout mcp
 
 - A Shareout account. Signup requires email; an owner-issued setup link lets a local agent connect without its own inbox.
 - Hosted MCP uses OAuth with PKCE, or an existing API key passed privately as a bearer header.
-- **Publishing through hosted MCP requires HTTP file transfer in addition to MCP.** The server prepares a short-lived upload URL; the host uploads the file directly, then publishes its upload ID. A host that cannot transfer files can still use the read/manage tools. Use local MCP or the CLI for publishing in that case.
+- **Hosted publishing accepts native ChatGPT HTML attachments or direct HTTP file transfer.** With a native `file` reference, Shareout retrieves one self-contained HTML attachment as index.html; publish only after ready=true. Other hosts and multi-file bundles use the short-lived HTTP upload handoff. A host with neither capability can still read and manage documents; use local MCP or the CLI to publish.
 - Document bytes never go in MCP arguments. Eight tools expose compact, paginated results. The skill does not repeat their schemas or load every template.
 - Use self-contained HTML and relative assets. See the [authoring rules](https://shareout.io/guidelines.md).
 

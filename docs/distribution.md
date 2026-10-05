@@ -1,6 +1,6 @@
 # Distribution status
 
-Updated 2026-10-03. A valid package is not a directory approval or a complete host acceptance test.
+Updated 2026-10-05. A valid package is not a directory approval or a complete host acceptance test.
 
 | Route | Current state | Next requirement |
 | --- | --- | --- |
@@ -11,7 +11,7 @@ Updated 2026-10-03. A valid package is not a directory approval or a complete ho
 | Cursor | Portable Agent Plugin and MCP configuration prepared | Host acceptance and publisher-application sign-in |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.0` | Keep metadata aligned with releases |
-| ChatGPT / Codex public directory | 0.1.4 draft uploaded; identity/domain verified; metadata and skill checks passed | Review three tool findings; provide reviewer access and recorded test cases before submission |
+| ChatGPT / Codex public directory | 0.1.4 draft uploaded; identity/domain verified; metadata and skill checks passed | Reviewer access saved; native ChatGPT publication passed; finish remaining cases, recording and draft refresh |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | Endpoint eligible for remote submission; not submitted | Publisher sign-in and OAuth compatibility test; its gateway documents CIMD while Shareout currently supports DCR |
 | Glama | Hosted connector route identified; not submitted | Sign-in/account required; submit the remote endpoint as a connector, not as an open-source server implementation |
@@ -48,7 +48,7 @@ Use a disposable Shareout workspace and fictional HTML, never a customer's docum
 
 **Short description:** Share what your agent makes
 
-**Description:** Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. Named links can expire or be revoked. A Shareout account is required. Hosted publishing needs a host that can transfer local files over HTTP; local MCP and the standalone CLI read files directly from disk.
+**Description:** Publish HTML reports, proposals, walkthroughs, and interactive pages. Share a link, collect feedback, and publish revisions at the same address. Named links can expire or be revoked. A Shareout account is required. Hosted publishing accepts native ChatGPT HTML attachments or direct HTTP transfer; local MCP and the standalone CLI read files directly from disk.
 
 **Endpoint:** https://shareout.io/mcp
 
@@ -78,3 +78,5 @@ The 0.1.3 package adds the public policy URLs and five positive/three negative s
 ### Review readiness update — 2026-10-03
 
 Service MCP 0.6.1 and isolated reviewer demo access are live. OpenAI's private reviewer fields were saved successfully, and the new tool definitions were rescanned. Three generic further-review notices remain. ChatGPT host sign-in and the actual recorded review workflow are still needed; no final submission or approval is claimed. The integration package remains 0.1.4 and the official MCP Registry listing remains 0.6.0 until a separate registry update.
+
+Package 0.1.5 prepares native ChatGPT file-input guidance for deployed MCP 0.6.2. Native attachment publication and anonymous exact-byte recipient access passed; see [host acceptance](host-acceptance.md). The portal remains on draft 0.1.4 until a replacement package is uploaded; no directory approval is implied.
