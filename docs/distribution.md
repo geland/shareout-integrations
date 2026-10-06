@@ -16,7 +16,7 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | Smithery | [Published](https://smithery.ai/servers/gregaeland/shareout) 2026-10-05; production 0.6.2 and all eight tools discovered | Full publish/update/revoke through Smithery remains a separate host acceptance test |
 | Glama | [Live, ownership verified, Healthy](https://glama.ai/mcp/connectors/io.shareout/shareout); all eight tools discovered | OAuth health-check profile uses isolated demo workspace; renew when grant expires |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
-| Docker MCP Catalog | [Draft PR #5462](https://github.com/docker/mcp-registry/pull/5462) opened; official validator and catalog generation passed | Docker-specific authenticated OAuth and tool test; then request review |
+| Docker MCP Catalog | Withdrawn at owner request; PR #5462 closed without merge | Do not reopen without explicit request |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
 | Vercel Connect | API-key service submitted 2026-10-05; configuration valid | Await review; OAuth dashboard test remains incompatible with required token resource parameter |
 | mcp.so | Current intake requires a $39 payment | No paid submission authorized or purchased |
@@ -115,3 +115,7 @@ Docker follow-up: isolated reviewer read/write tests are now approved. Docker MC
 Docker review update (2026-10-05): owner explicitly approved requesting maintainer review before authenticated acceptance. PR #5462 is now open and ready for review (isDraft=false verified). The body discloses the missing OAuth provider and requests onboarding guidance; publish/revise/revoke tests remain blocked.
 
 Docker withdrawal (2026-10-05): owner requested closing the upstream submission. PR #5462 is CLOSED and mergedAt is null, independently verified. Do not reopen or pursue this upstream submission without a new explicit request.
+
+## Gemini, Skills and Cline release — 2026-10-06
+
+Package 0.1.6 adds a Gemini extension manifest with the existing hosted MCP and on-demand skill, plus Gemini and Cline installation instructions. Official portable schemas and Claude strict validation passed. Gemini installed the local extension into isolated settings and listed both the MCP server and skill. Cline installed the skill into a temporary project. The Cline marketplace validator passed with the proposed skill entry (204 entries total). These installation checks do not establish authenticated publishing acceptance in either host. The OpenAI submission remains on 0.1.5 and is not replaced by this release.

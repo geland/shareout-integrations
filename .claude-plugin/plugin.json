@@ -1,6 +1,6 @@
 {
   "name": "shareout",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Publish agent-made pages, collect feedback, and revise at the same link.",
   "author": {
     "name": "Greg Eland",

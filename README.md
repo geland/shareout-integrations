@@ -26,13 +26,30 @@ codex plugin add shareout@shareout
 
 For an MCP-only connection, merge [configs/codex.toml](configs/codex.toml) into your Codex configuration and run `codex mcp login shareout`. This repository is a community-installable source; it does not imply approval in the public ChatGPT/Codex directory.
 
+## Gemini CLI
+
+```sh
+gemini extensions install https://github.com/geland/shareout-integrations
+```
+
+The extension bundles the hosted MCP connection and the Shareout skill. Start Gemini and run `/mcp auth shareout` to connect your account. The skill loads workflow details only when needed. Gemini uses `httpUrl` for Streamable HTTP; this repository supplies the host-specific manifest.
+
+## Cline
+
+```sh
+cline skill install geland/shareout-integrations --skill shareout
+cline mcp install shareout --transport http https://shareout.io/mcp
+```
+
+The skill and MCP connection are separate installations. Complete Shareout sign-in in Cline before using hosted tools, or use the standalone CLI for local files. Marketplace review is separate from direct installation.
+
 ## Skills CLI / skills.sh
 
 ```sh
 npx skills add geland/shareout-integrations --skill shareout
 ```
 
-Choose your agent when prompted. This installs the skill; connect the MCP separately or use the CLI. Avoid installing the same skill again if your plugin already supplies it. skills.sh discovers skills through its CLI's install telemetry; a repository does not imply a directory ranking or listing.
+Choose your agent when prompted, or add `--agent cline` (or another supported agent). Try asking: “Publish this HTML proposal with a private review link,” or “Update this Shareout page while keeping its link.” This installs the skill; connect the MCP separately or use the CLI. Avoid installing the same skill again if your plugin already supplies it. skills.sh discovers skills through its CLI's install telemetry; a repository does not imply a directory ranking or listing.
 
 ## OpenCode
 

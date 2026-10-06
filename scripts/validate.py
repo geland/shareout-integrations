@@ -40,3 +40,9 @@ for path in ROOT.rglob('*.json'):
     if '.git' not in path.parts and 'dist' not in path.parts:
         json.loads(path.read_text())
 print('Manifest parity, skill metadata/size and JSON checks passed')
+
+gemini = json.loads((ROOT / 'gemini-extension.json').read_text())
+assert gemini['version'] == plugin['version']
+assert gemini['name'] == plugin['name']
+assert gemini['mcpServers'] == {'shareout': {'httpUrl': 'https://shareout.io/mcp'}}
+print('Gemini manifest parity passed')

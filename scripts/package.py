@@ -6,7 +6,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = [
-    'plugin.json', 'mcp.json', '.mcp.json',
+    'plugin.json', 'mcp.json', '.mcp.json', 'gemini-extension.json',
     '.codex-plugin/plugin.json', '.claude-plugin/plugin.json',
     'skills/shareout/SKILL.md', 'skills/shareout/agents/openai.yaml',
     'assets/icon.svg', 'README.md', 'LICENSE',
