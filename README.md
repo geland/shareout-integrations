@@ -2,7 +2,9 @@
 
 Your agent made it. Share it out.
 
-Publish an HTML report, proposal, walkthrough, or interactive page. Share a link, collect feedback, and revise the page at the same address.
+Share work from your AI workspace with clients, contractors and collaborators outside it—even people who do not use AI themselves.
+
+Your agent helped make it. The people reviewing it do not need an agent. Send an HTML proposal, report or interactive prototype as a browser link. Recipients can view and try the page without joining your Claude, Codex or Cline workspace. Grant commenting access separately when you want feedback; your agent can read it and revise the work at the same address.
 
 [Try a shared page](https://shareout.io/d/cujufgdheurd) · [Connect your agent](https://shareout.io/agents) · [Templates](https://shareout.io/templates/)
 
