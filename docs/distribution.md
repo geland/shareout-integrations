@@ -113,3 +113,5 @@ MCP 0.6.3 follow-up (2026-10-05): concise catalog/publish/link parameter descrip
 Docker follow-up: isolated reviewer read/write tests are now approved. Docker MCP CLI 0.42.2 returns HTTP 500, provider `shareout`: not found before OAuth begins. PR #5462 now documents this provider-onboarding blocker; authenticated publish/revise/revoke acceptance remains incomplete. PR remains draft pending approval to request maintainer review with the blocker disclosed.
 
 Docker review update (2026-10-05): owner explicitly approved requesting maintainer review before authenticated acceptance. PR #5462 is now open and ready for review (isDraft=false verified). The body discloses the missing OAuth provider and requests onboarding guidance; publish/revise/revoke tests remain blocked.
+
+Docker withdrawal (2026-10-05): owner requested closing the upstream submission. PR #5462 is CLOSED and mergedAt is null, independently verified. Do not reopen or pursue this upstream submission without a new explicit request.
