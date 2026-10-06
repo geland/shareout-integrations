@@ -6,8 +6,10 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | --- | --- | --- |
 | Claude Code repository marketplace | Published; Claude Code 2.1.284 installed from GitHub; strict validation passes | Interactive OAuth and publish/update/revoke acceptance |
 | Codex repository marketplace | Published; install check and full hosted API-key workflow passed in Codex 0.155.1 | Interactive OAuth and recorded browser/host demonstration |
-| skills.sh / Skills CLI | Published; Skills CLI discovered and installed the skill for OpenCode in a temporary project | Directory indexing is telemetry-driven; test telemetry was disabled |
+| skills.sh / Skills CLI | Public Shareout detail page verified 2026-10-06; remote skill installation passed | Ranking and install counts are not yet populated |
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
+| Gemini CLI | Extension 0.1.6 published; isolated install and skill discovery passed; required gallery topic verified | Daily gallery crawler listing unconfirmed; authenticated host acceptance remains separate |
+| Cline Marketplace | Skill [PR #179](https://github.com/cline/marketplace/pull/179) submitted; installation and marketplace validator passed | Await maintainer review; authenticated publishing not yet verified |
 | Cursor | Publisher application submitted 2026-10-05; portal confirms receipt | Await review; host acceptance remains separate |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.2` | Keep metadata aligned with releases |
@@ -119,3 +121,5 @@ Docker withdrawal (2026-10-05): owner requested closing the upstream submission.
 ## Gemini, Skills and Cline release — 2026-10-06
 
 Package 0.1.6 adds a Gemini extension manifest with the existing hosted MCP and on-demand skill, plus Gemini and Cline installation instructions. Official portable schemas and Claude strict validation passed. Gemini installed the local extension into isolated settings and listed both the MCP server and skill. Cline installed the skill into a temporary project. The Cline marketplace validator passed with the proposed skill entry (204 entries total). These installation checks do not establish authenticated publishing acceptance in either host. The OpenAI submission remains on 0.1.5 and is not replaced by this release.
+
+Completion: public source 67786c2 publishes package 0.1.6; the `gemini-cli-extension` repository topic was independently verified. Gemini CLI 0.62.0 installed the extension in isolated settings, listed the Shareout skill and MCP server, and reached the expected authentication prompt. No gallery listing or authenticated workflow is claimed. Cline 3.0.68 installed the skill locally; Skills CLI 1.7.0 installed it from the public repository with normal telemetry once. The skills.sh detail page subsequently displayed the real SKILL.md and installation command (previously unavailable); counts and ranking remain unconfirmed. Cline PR #179 is open, not draft, and awaiting review, with full host-test limits disclosed. No Docker submission was reopened.
