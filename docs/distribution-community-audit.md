@@ -27,13 +27,13 @@ Do not open PRs against a host's core implementation or pursue curated first-par
 | Codex repository marketplace | Shareout-maintained public repository that users add themselves | Keep; distinct from OpenAI's public directory |
 | OpenCode, VS Code / Copilot | Host-specific MCP configuration distributed in Shareout's public repository | Keep setup instructions and directory discovery; configuration alone is not a marketplace listing |
 | Docker MCP Catalog | Official curated catalog that invites metadata PRs, not the Docker Engine core repository; our submission was withdrawn at Greg's request | PR #5462 reverified CLOSED and unmerged. Do not reopen or seek provider onboarding. No replacement Docker-specific submission identified |
-| OpenAI public plugin directory | Explicit third-party plugin intake with identity verification and review; first-party public distribution surface | Existing application was submitted by Greg. No new curated submission work; ask whether to leave that review running or withdraw it if still pending. Repository marketplace, skill and MCP directories are the community alternatives |
-| Vercel Connect | Explicit third-party service intake with review; separate from Vercel Native Marketplace or core source | Existing API-key application recorded as submitted. No new curated submission work; ask whether to leave review running or withdraw if pending. skills.sh and MCP directories cover community discovery |
+| OpenAI public plugin directory | Explicit third-party plugin intake with identity verification and review; first-party public distribution surface | Greg confirmed retaining the existing application on 2026-10-08. Do not withdraw. Focus new effort on repository marketplaces, skill and MCP directories |
+| Vercel Connect | Explicit third-party service intake with review; separate from Vercel Native Marketplace or core source | Greg confirmed retaining the existing API-key application on 2026-10-08. Do not withdraw. Focus new effort on skills.sh and MCP directories |
 | Vercel Native Marketplace | Separate provider/integration program; no native listing was submitted | Outside current scope; do not pursue |
 | Claude curated directory | First-party review route previously deferred by Greg | Remains deferred; community repository distribution stays available |
 | GitHub curated MCP directory | Separate curated surface, not automatic approval from the open MCP Registry | No submission made; do not pursue under community scope |
 
-The OpenAI and Vercel application decisions above concern previously authorized submissions. This audit does not establish their live review status; no withdrawal has occurred. No new OAuth grant, customer data or test credential was shared in this audit.
+The OpenAI and Vercel application decisions above concern previously authorized submissions. After clarifying that both intakes welcome third-party submissions, Greg accepted the recommendation to leave the existing applications running and focus new effort on community discovery. This decision does not establish their live review status; no withdrawal has occurred. No new OAuth grant, customer data or test credential was shared in this audit.
 
 ## Current verification
 
