@@ -1,6 +1,6 @@
 # Distribution status
 
-Updated 2026-10-05. A valid package is not a directory approval or a complete host acceptance test.
+Updated 2026-10-08. A valid package is not a directory approval or a complete host acceptance test.
 
 | Route | Current state | Next requirement |
 | --- | --- | --- |
@@ -10,7 +10,8 @@ Updated 2026-10-05. A valid package is not a directory approval or a complete ho
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
 | Gemini CLI | Extension 0.1.6 published; isolated install and skill discovery passed; required gallery topic verified | Daily gallery crawler listing unconfirmed; authenticated host acceptance remains separate |
 | Cline Marketplace | Skill [PR #179](https://github.com/cline/marketplace/pull/179) submitted; installation and marketplace validator passed | Await maintainer review; authenticated publishing not yet verified |
-| Cursor | Publisher application submitted 2026-10-05; portal confirms receipt | Await review; host acceptance remains separate |
+| Cursor Marketplace | Declined at this time; owner shared response 2026-10-08 | Team recommends cursor.directory; no reason provided |
+| Cursor Directory | [Community submission accepted](https://cursor.directory/plugins/shareout) 2026-10-08; one MCP, one skill and brand icon | Security scan pending; unpublished and hidden until it completes |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.2` | Keep metadata aligned with releases |
 | ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
@@ -125,3 +126,7 @@ Package 0.1.6 adds a Gemini extension manifest with the existing hosted MCP and 
 Completion: public source 67786c2 publishes package 0.1.6; the `gemini-cli-extension` repository topic was independently verified. Gemini CLI 0.62.0 installed the extension in isolated settings, listed the Shareout skill and MCP server, and reached the expected authentication prompt. No gallery listing or authenticated workflow is claimed. Cline 3.0.68 installed the skill locally; Skills CLI 1.7.0 installed it from the public repository with normal telemetry once. The skills.sh detail page subsequently displayed the real SKILL.md and installation command (previously unavailable); counts and ranking remain unconfirmed. Cline PR #179 is open, not draft, and awaiting review, with full host-test limits disclosed. No Docker submission was reopened.
 
 External-collaboration positioning (2026-10-06): package 0.1.7 and the Cline entry now lead with sharing to clients outside the publisher's AI team, including non-AI users. Viewing and commenting access remain explicitly separate. Cline device login succeeded, but the first inference run returned upstream HTTP 429 for the selected free model after three attempts. No recorded Cline publish/review/revision workflow is claimed. The fictional external-client demo plan is in docs/external-review-demo.md.
+
+Cursor update (2026-10-08): owner shared the Marketplace team's decision declining the submission at this time and recommending cursor.directory. No reason was stated. Cursor Directory explicitly accepts community plugins through its website and detects `.mcp.json` plus `skills/*/SKILL.md` from GitHub. The repository is compatible with those paths; normal sign-in is pending. No directory submission or publication is claimed.
+
+Community scope clarified (2026-10-08): Greg wants community contribution routes. See [the route audit](distribution-community-audit.md). Default to independent directories, ecosystem galleries, open metadata registries and our own repository marketplaces. Cline is an explicitly invited catalog metadata PR, not a core-source change; PR #179 remains open and touches only the skill entry and icon. Docker PR #5462 remains closed and unmerged. Cursor Directory accepted the website submission with MCP, skill and icon, and currently reports a pending security scan with the listing unpublished/hidden. Existing curated OpenAI and Vercel Connect applications have not been withdrawn; Greg's preference is pending. No new curated first-party application or core-repository contribution is in scope.
