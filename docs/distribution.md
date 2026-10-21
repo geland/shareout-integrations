@@ -37,6 +37,9 @@ Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462
 
 ## Current OpenAI submission
 
+2026-10-20: package 0.1.5 is Approved, Ready to publish, Not published (verified in portal). A fresh scan flags catalog, links, reviews and versions for grouped operations. MCP/CLI 0.7.0 and plugin 0.2.0 are being prepared to expose independent operations; they are not yet deployed, uploaded, reviewed or published. The older submission narrative below is historical.
+
+
 The owner completed final attestations and submission on 2026-10-05. The publisher portal independently shows Shareout “Version 1.0.0 · In review”, “Not published”, and “Configured”. The uploaded portable package is 0.1.5; the portal uses a separate associated-app version label. The final ZIP includes the accessible 6:01 labeled walkthrough URL, verified by anonymous HTTP 200 and SHA-256 match. Reviewer credentials were saved privately. Non-blocking MCP findings remain for reviewers. Earlier dated notes below describe the path to submission and are superseded by this status.
 
 ## Verified evidence

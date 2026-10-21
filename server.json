@@ -3,7 +3,7 @@
   "name": "io.shareout/shareout",
   "title": "Shareout",
   "description": "Publish HTML pages, collect review comments, and revise at the same link.",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "websiteUrl": "https://shareout.io",
   "remotes": [
     {

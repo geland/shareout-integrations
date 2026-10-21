@@ -1,6 +1,6 @@
 {
   "name": "shareout",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Publish HTML pages, collect feedback, and revise at the same link.",
   "mcpServers": {
     "shareout": {
