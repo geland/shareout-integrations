@@ -72,3 +72,8 @@ The 6:01 edited walkthrough labels all five positive and three negative cases. T
 ## Submitted (2026-10-05)
 
 The owner completed attestations and submitted the final package. Independent publisher UI verification shows In review, Not published, and Configured. Portal associated-app version label is 1.0.0; portable package version is 0.1.5. This confirms submission, not approval or publication.
+
+
+## Independent operations (2026-10-20)
+
+MCP/CLI 0.7.0 runtime tests exercise required identifiers, rejected incomplete mutations, read-only OAuth, cross-workspace isolation, comment state, link revocation and the old approved hosted aliases. All 138 Worker tests and native CLI/policy checks pass. The deployed eighteen-tool inventory independently passes OpenAI's latest MCP scan with no findings. Plugin 0.2.0 metadata and skill checks also pass. These checks do not replace a newly recorded ChatGPT/Cline publishing run. The retained 0.1.5 recording demonstrates the same product flows with previous tool names.

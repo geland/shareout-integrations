@@ -8,16 +8,16 @@ Updated 2026-10-08. A valid package is not a directory approval or a complete ho
 | Codex repository marketplace | Published; install check and full hosted API-key workflow passed in Codex 0.155.1 | Interactive OAuth and recorded browser/host demonstration |
 | skills.sh / Skills CLI | Public Shareout detail page verified 2026-10-06; remote skill installation passed | Ranking and install counts are not yet populated |
 | OpenCode | Configuration published; OpenCode 1.17.11 connected to production with a disposable API key | Interactive OAuth and publish/update/revoke acceptance |
-| Gemini CLI | Extension 0.1.6 published; isolated install and skill discovery passed; required gallery topic verified | Daily gallery crawler listing unconfirmed; authenticated host acceptance remains separate |
+| Gemini CLI | Extension 0.2.0 manifest and source published; earlier isolated installation passed | Gallery crawler freshness and current authenticated workflow remain separate |
 | Cline Marketplace | Skill [PR #179](https://github.com/cline/marketplace/pull/179) submitted; installation and marketplace validator passed | Await maintainer review; authenticated publishing not yet verified |
 | Cursor Marketplace | Declined at this time; owner shared response 2026-10-08 | Team recommends cursor.directory; no reason provided |
 | Cursor Directory | [Community submission accepted](https://cursor.directory/plugins/shareout) 2026-10-08; one MCP, one skill and brand icon | Security scan pending; unpublished and hidden until it completes |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
-| Official MCP Registry | Published and independently verified: `io.shareout/shareout` version `0.6.2` | Keep metadata aligned with releases |
-| ChatGPT / Codex public directory | Submitted by owner 2026-10-05; portal independently shows In review and Not published; package 0.1.5 | Await review decision; approval and publication remain separate |
+| Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
+| ChatGPT / Codex public directory | 0.2.0 uploaded; metadata, skill and eighteen-tool MCP scan pass with no findings; unpublished | Owner attestations/submission, review and later publication |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | [Published](https://smithery.ai/servers/gregaeland/shareout) 2026-10-05; production 0.6.2 and all eight tools discovered | Full publish/update/revoke through Smithery remains a separate host acceptance test |
-| Glama | [Live, ownership verified, Healthy](https://glama.ai/mcp/connectors/io.shareout/shareout); all eight tools discovered | OAuth health-check profile uses isolated demo workspace; renew when grant expires |
+| Glama | Ownership verified; existing tool index is stale and health is Unhealthy due to expired OAuth test credentials | Renew only the fictional reviewer workspace connection and recheck tools |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
 | Docker MCP Catalog | Withdrawn at owner request; PR #5462 closed without merge | Do not reopen without explicit request |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
@@ -37,7 +37,7 @@ Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462
 
 ## Current OpenAI submission
 
-2026-10-20: package 0.1.5 is Approved, Ready to publish, Not published (verified in portal). A fresh scan flags catalog, links, reviews and versions for grouped operations. MCP/CLI 0.7.0 and plugin 0.2.0 are being prepared to expose independent operations; they are not yet deployed, uploaded, reviewed or published. The older submission narrative below is historical.
+2026-10-20: plugin 0.2.0 is uploaded as a new draft. Metadata and skill checks pass; a fresh scan of the deployed MCP 0.7.0 server discovers eighteen independent tools with no findings. Final owner attestations and submission remain pending; the OpenAI plugin is not published. Package 0.1.5 remains the previously approved version. The older submission narrative below is historical.
 
 
 The owner completed final attestations and submission on 2026-10-05. The publisher portal independently shows Shareout “Version 1.0.0 · In review”, “Not published”, and “Configured”. The uploaded portable package is 0.1.5; the portal uses a separate associated-app version label. The final ZIP includes the accessible 6:01 labeled walkthrough URL, verified by anonymous HTTP 200 and SHA-256 match. Reviewer credentials were saved privately. Non-blocking MCP findings remain for reviewers. Earlier dated notes below describe the path to submission and are superseded by this status.
@@ -133,3 +133,23 @@ External-collaboration positioning (2026-10-06): package 0.1.7 and the Cline ent
 Cursor update (2026-10-08): owner shared the Marketplace team's decision declining the submission at this time and recommending cursor.directory. No reason was stated. Cursor Directory explicitly accepts community plugins through its website and detects `.mcp.json` plus `skills/*/SKILL.md` from GitHub. The repository is compatible with those paths; normal sign-in is pending. No directory submission or publication is claimed.
 
 Community scope clarified (2026-10-08): Greg wants community contribution routes. See [the route audit](distribution-community-audit.md). Default to independent directories, ecosystem galleries, open metadata registries and our own repository marketplaces. Cline is an explicitly invited catalog metadata PR, not a core-source change; PR #179 remains open and touches only the skill entry and icon. Docker PR #5462 remains closed and unmerged. Cursor Directory accepted the website submission with MCP, skill and icon, and currently reports a pending security scan with the listing unpublished/hidden. Greg confirmed on 2026-10-08 that the existing OpenAI and Vercel Connect applications should be retained; do not withdraw them. New effort focuses on community discovery. No new curated first-party application or core-repository contribution is in scope.
+
+
+## Independent operations release — 2026-10-20
+
+MCP/CLI 0.7.0 is deployed from service source `27918a8` as Worker `2c530611-74ee-4fd4-925b-44b4ecd4eebe` at 100%, independently verified. TypeScript, 138 Worker tests, native Go/policy checks and exact-source CI pass. All six CLI 0.7.0 archives were anonymously downloaded and their SHA-256 checksums verified. Live skill/discovery guidance matches release source. Old approved hosted schemas remain callable during client migration, while only eighteen independent operations are advertised. No database change or new secret is required.
+
+Public package [v0.2.0](https://github.com/geland/shareout-integrations/releases/tag/v0.2.0) targets merged source `bab2b1a`. Its 28,985-byte ZIP has SHA-256 `db3c030c71f4a48299dc8f6ccebcbda91564c4c4c30d01f02698ca9ea41d0550`, independently verified from the public download and identical to the OpenAI upload. Official schemas, manifest parity, skill size, strict Claude validation and integration CI pass. The previous walkthrough demonstrates unchanged product flows with earlier tool names.
+
+| Existing surface | Current update state | Remaining boundary |
+| --- | --- | --- |
+| OpenAI plugin | 0.2.0 uploaded; metadata, skill and eighteen-tool MCP scan have no findings | Owner attestations/submission; subsequent approval and publication |
+| Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
+| Claude/Codex repository marketplaces, Gemini, skill installations | Main source, manifests, skill and release ZIP updated | Existing clients must refresh/update; external crawler freshness is separate |
+| Cline community PR #179 | Existing description updated to package 0.2.0 / MCP 0.7.0; installation source unchanged | Maintainer review and actual Cline workflow acceptance |
+| Cursor Directory | Cached skill replaced and re-read with new operations | Security rescan running; listing hidden/unpublished during the scan |
+| Smithery | Owner Google sign-in restored; Releases UI says server updates were removed and require support | Public-information support request prepared; owner send approval pending; listing still shows eight tools |
+| Glama | Ownership verified; existing tool index is stale and health is Unhealthy due to expired OAuth test credentials | Renew only the fictional reviewer workspace connection and recheck tools |
+| Grok Bot community PR #54 | Independently verified closed without merge on October 10 | No publication or reopening claimed |
+
+Docker remains withdrawn and Claude's curated directory remains deferred. No new paid listing or curated destination was submitted. Existing endpoint/config-only surfaces retain `https://shareout.io/mcp`; no replacement connection URL is required. Hosted compatibility protects clients using the previously approved definitions.
