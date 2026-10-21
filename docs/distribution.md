@@ -14,7 +14,7 @@ Updated 2026-10-21. A valid package is not a directory approval or a complete ho
 | Cursor Directory | [Community submission accepted](https://cursor.directory/plugins/shareout) 2026-10-08; one MCP, one skill and brand icon | Security scan pending; unpublished and hidden until it completes |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
-| ChatGPT / Codex public directory | 0.2.0 submitted and approved; metadata, skill and eighteen-tool MCP scan have no findings; Ready to publish / Not published | Publication remains a separate action |
+| ChatGPT / Codex public directory | [0.2.0 published](https://chatgpt.com/plugins/plugin_asdk_app_6ac127c0857c819193e2f1731bd1df9f) by the owner 2026-10-21; package, skill and all eighteen tools independently reviewed | Fresh installation and published-plugin end-to-end workflow remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | [Existing listing](https://smithery.ai/servers/gregaeland/shareout) still shows eight tools; approved refresh request sent to support | Support refresh and full host workflow acceptance |
 | Glama | Fictional reviewer OAuth renewed 2026-10-21; Test Connection passed and public listing independently shows Healthy / eighteen tools | Separate TDQS scan still references eight old tools; full publishing workflow acceptance remains separate |
@@ -37,7 +37,7 @@ Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462
 
 ## Current OpenAI submission
 
-2026-10-20: plugin 0.2.0 was uploaded with passing metadata and skill checks; a fresh scan of deployed MCP 0.7.0 discovers eighteen independent tools with no findings. After explicit owner approval, all six attestations were checked and the draft was submitted. The portal returned release `pluginrel_6623327047948191a75f24a04f661e81` and shows “0.2.0 · Approved”, “Ready to publish” and “Not published”. Publication was not performed. The older submission narrative below is historical.
+2026-10-21: the owner published plugin 0.2.0. The portal independently confirms 0.2.0 Published, with all eighteen MCP tools Published, Authorized and Domain verified and no findings. The live listing and bundled skill match the released package. An initial app-card metadata placeholder resolved on refresh. A fresh installation and end-to-end published-plugin workflow remain separate checks. The older submission narrative below is historical.
 
 
 The owner completed final attestations and submission on 2026-10-05. The publisher portal independently shows Shareout “Version 1.0.0 · In review”, “Not published”, and “Configured”. The uploaded portable package is 0.1.5; the portal uses a separate associated-app version label. The final ZIP includes the accessible 6:01 labeled walkthrough URL, verified by anonymous HTTP 200 and SHA-256 match. Reviewer credentials were saved privately. Non-blocking MCP findings remain for reviewers. Earlier dated notes below describe the path to submission and are superseded by this status.
@@ -143,7 +143,7 @@ Public package [v0.2.0](https://github.com/geland/shareout-integrations/releases
 
 | Existing surface | Current update state | Remaining boundary |
 | --- | --- | --- |
-| OpenAI plugin | 0.2.0 submitted and approved; metadata, skill and eighteen-tool MCP scan have no findings; Ready to publish / Not published | Publication remains a separate action |
+| OpenAI plugin | [0.2.0 published](https://chatgpt.com/plugins/plugin_asdk_app_6ac127c0857c819193e2f1731bd1df9f); listing, skill and eleven read/seven write actions match the release; no portal findings | Fresh installation and end-to-end published-plugin workflow |
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
 | Claude/Codex repository marketplaces, Gemini, skill installations | Main source, manifests, skill and release ZIP updated | Existing clients must refresh/update; external crawler freshness is separate |
 | Cline community PR #179 | Existing description updated to package 0.2.0 / MCP 0.7.0; installation source unchanged | Maintainer review and actual Cline workflow acceptance |
@@ -157,3 +157,7 @@ Docker remains withdrawn and Claude's curated directory remains deferred. No new
 ### Reviewer access and readiness recheck — 2026-10-21
 
 The original fictional reviewer credentials remain valid and were used through the normal sign-in page without exposing the password. No account recreation, password reset or change to OpenAI review details was needed. Glama consent confirmed only the fictional workspace with the existing read/write scope; its renewed profile passed Test Connection (Healthy, 1,370 ms), and the public listing independently shows all eighteen updated tools. The separate TDQS assessment still references the old eight-tool scan. OpenAI 0.2.0 remains Approved / Ready to publish / Not published, with no MCP findings. No current OpenAI publication blocker was found.
+
+### Published OpenAI listing review — 2026-10-21
+
+The owner published plugin 0.2.0 at [the ChatGPT listing](https://chatgpt.com/plugins/plugin_asdk_app_6ac127c0857c819193e2f1731bd1df9f). The portal confirms package and eighteen tools Published, Authorized and Domain verified with no MCP findings. The public name/icon/developer, tagline, description, three prompts, category and version match the release. The skill includes current 0.7.0 instructions; the app exposes eleven read operations and seven writes. Public website, privacy, terms and support destinations return HTTP 200. An initial disabled app card showing its internal ID and No description resolved after a fresh load; its correct Shareout metadata and action details now render normally. No persistent listing discrepancy was found. No new installation or end-to-end published-plugin workflow was performed during this review.
