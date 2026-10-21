@@ -101,3 +101,7 @@ See [Privacy](https://shareout.io/privacy), [Terms](https://shareout.io/terms), 
 Run `python3 scripts/validate.py` with `jsonschema` and `PyYAML` installed, and `claude plugin validate .claude-plugin/plugin.json --strict` when Claude Code is available. Build the review ZIP with `python3 scripts/package.py`; it uses an explicit file allowlist. Generated ZIPs live in ignored `dist/`.
 
 The MIT license covers these integration files. It does not license the hosted service, grant rights to the Shareout name or marks, or change the service's terms. Report packaging issues through this repository; never include API keys, private documents, or bearer links in an issue.
+
+## MCP/CLI 0.7.0 and plugin 0.2.0
+
+The endpoint stays `https://shareout.io/mcp`. Refresh tool discovery in an existing host after the service release; update the installed skill/plugin or Gemini extension through that host. Eighteen separate operations replace grouped catalog, document, link, comment and version tools. Local MCP uses standalone CLI 0.7.0. Old hosted calls remain compatible during migration. OpenAI publication is a separate owner action.
