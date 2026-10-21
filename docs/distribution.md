@@ -1,6 +1,6 @@
 # Distribution status
 
-Updated 2026-10-20. A valid package is not a directory approval or a complete host acceptance test.
+Updated 2026-10-21. A valid package is not a directory approval or a complete host acceptance test.
 
 | Route | Current state | Next requirement |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ Updated 2026-10-20. A valid package is not a directory approval or a complete ho
 | ChatGPT / Codex public directory | 0.2.0 submitted and approved; metadata, skill and eighteen-tool MCP scan have no findings; Ready to publish / Not published | Publication remains a separate action |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | [Existing listing](https://smithery.ai/servers/gregaeland/shareout) still shows eight tools; approved refresh request sent to support | Support refresh and full host workflow acceptance |
-| Glama | Owner Google sign-in restored; existing index and expired test credentials remain stale; personal Shareout consent cancelled | Complete fictional reviewer sign-in, renew only that workspace connection, and recheck tools |
+| Glama | Fictional reviewer OAuth renewed 2026-10-21; Test Connection passed and public listing independently shows Healthy / eighteen tools | Separate TDQS scan still references eight old tools; full publishing workflow acceptance remains separate |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
 | Docker MCP Catalog | Withdrawn at owner request; PR #5462 closed without merge | Do not reopen without explicit request |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
@@ -149,7 +149,11 @@ Public package [v0.2.0](https://github.com/geland/shareout-integrations/releases
 | Cline community PR #179 | Existing description updated to package 0.2.0 / MCP 0.7.0; installation source unchanged | Maintainer review and actual Cline workflow acceptance |
 | Cursor Directory | Cached skill replaced and re-read with new operations | Security rescan running; listing hidden/unpublished during the scan |
 | Smithery | Owner Google sign-in restored; approved refresh email sent to support@smithery.ai with endpoint/version/public release | Support action pending; listing still shows eight tools |
-| Glama | Owner Google sign-in restored; existing index and expired test credentials remain stale; personal Shareout consent cancelled | Complete fictional reviewer sign-in, renew only that workspace connection, and recheck tools |
+| Glama | Fictional reviewer OAuth renewed 2026-10-21; Test Connection passed and public listing independently shows Healthy / eighteen tools | Separate TDQS scan still references eight old tools; full publishing workflow acceptance remains separate |
 | Grok Bot community PR #54 | Independently verified closed without merge on October 10 | No publication or reopening claimed |
 
 Docker remains withdrawn and Claude's curated directory remains deferred. No new paid listing or curated destination was submitted. Existing endpoint/config-only surfaces retain `https://shareout.io/mcp`; no replacement connection URL is required. Hosted compatibility protects clients using the previously approved definitions.
+
+### Reviewer access and readiness recheck — 2026-10-21
+
+The original fictional reviewer credentials remain valid and were used through the normal sign-in page without exposing the password. No account recreation, password reset or change to OpenAI review details was needed. Glama consent confirmed only the fictional workspace with the existing read/write scope; its renewed profile passed Test Connection (Healthy, 1,370 ms), and the public listing independently shows all eighteen updated tools. The separate TDQS assessment still references the old eight-tool scan. OpenAI 0.2.0 remains Approved / Ready to publish / Not published, with no MCP findings. No current OpenAI publication blocker was found.
