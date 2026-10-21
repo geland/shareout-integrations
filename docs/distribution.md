@@ -11,17 +11,17 @@ Updated 2026-10-21. A valid package is not a directory approval or a complete ho
 | Gemini CLI | Extension 0.2.0 manifest and source published; earlier isolated installation passed | Gallery crawler freshness and current authenticated workflow remain separate |
 | Cline Marketplace | Skill [PR #179](https://github.com/cline/marketplace/pull/179) submitted; installation and marketplace validator passed | Await maintainer review; authenticated publishing not yet verified |
 | Cursor Marketplace | Declined at this time; owner shared response 2026-10-08 | Team recommends cursor.directory; no reason provided |
-| Cursor Directory | [Community submission accepted](https://cursor.directory/plugins/shareout) 2026-10-08; one MCP, one skill and brand icon | Security scan pending; unpublished and hidden until it completes |
+| Cursor Directory | [Published](https://cursor.directory/plugins/shareout), rechecked 2026-10-21; public directory search lists Shareout and owner options offer Unpublish | Current skill/MCP source is present; authenticated Cursor workflow remains separate |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
 | ChatGPT / Codex public directory | [0.2.0 published](https://chatgpt.com/plugins/plugin_asdk_app_6ac127c0857c819193e2f1731bd1df9f) by the owner 2026-10-21; package, skill and all eighteen tools independently reviewed | Fresh installation and published-plugin end-to-end workflow remain separate |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
 | Smithery | [Existing listing](https://smithery.ai/servers/gregaeland/shareout) still shows eight tools; approved refresh request sent to support | Support refresh and full host workflow acceptance |
 | Glama | Fictional reviewer OAuth renewed 2026-10-21; Test Connection passed and public listing independently shows Healthy / eighteen tools | Separate TDQS scan still references eight old tools; full publishing workflow acceptance remains separate |
-| PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
+| PulseMCP | Submission and listing-change pause rechecked live 2026-10-21 | Wait for intake to reopen; no submission claimed |
 | Docker MCP Catalog | Withdrawn at owner request; PR #5462 closed without merge | Do not reopen without explicit request |
-| Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
-| Vercel Connect | API-key service submitted 2026-10-05; configuration valid | Await review; OAuth dashboard test remains incompatible with required token resource parameter |
+| Awesome MCP Servers | [Published](https://mcpservers.org/servers/shareout-io-agents); approval email dated 2026-10-05 recovered and public listing rechecked 2026-10-21 | No submission follow-up needed; endpoint and current agent guide are present |
+| Vercel Connect | Original Chrome submission still shows Service Submitted (2026-10-05), API Key Configuration Valid; catalog search finds no Shareout entry and no approval email was found | Follow up on review status; OAuth resource-parameter test remains separate |
 | mcp.so | Current intake requires a $39 payment | No paid submission authorized or purchased |
 | GitHub public MCP directory | Curated surface investigated; no submission made | Establish the current intake route; registry publication alone does not establish a GitHub listing |
 
@@ -147,7 +147,7 @@ Public package [v0.2.0](https://github.com/geland/shareout-integrations/releases
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
 | Claude/Codex repository marketplaces, Gemini, skill installations | Main source, manifests, skill and release ZIP updated | Existing clients must refresh/update; external crawler freshness is separate |
 | Cline community PR #179 | Existing description updated to package 0.2.0 / MCP 0.7.0; installation source unchanged | Maintainer review and actual Cline workflow acceptance |
-| Cursor Directory | Cached skill replaced and re-read with new operations | Security rescan running; listing hidden/unpublished during the scan |
+| Cursor Directory | Updated skill and MCP are published; public directory search lists Shareout, verified 2026-10-21 | Full authenticated Cursor workflow remains separate |
 | Smithery | Owner Google sign-in restored; approved refresh email sent to support@smithery.ai with endpoint/version/public release | Support action pending; listing still shows eight tools |
 | Glama | Fictional reviewer OAuth renewed 2026-10-21; Test Connection passed and public listing independently shows Healthy / eighteen tools | Separate TDQS scan still references eight old tools; full publishing workflow acceptance remains separate |
 | Grok Bot community PR #54 | Independently verified closed without merge on October 10 | No publication or reopening claimed |
@@ -161,3 +161,11 @@ The original fictional reviewer credentials remain valid and were used through t
 ### Published OpenAI listing review — 2026-10-21
 
 The owner published plugin 0.2.0 at [the ChatGPT listing](https://chatgpt.com/plugins/plugin_asdk_app_6ac127c0857c819193e2f1731bd1df9f). The portal confirms package and eighteen tools Published, Authorized and Domain verified with no MCP findings. The public name/icon/developer, tagline, description, three prompts, category and version match the release. The skill includes current 0.7.0 instructions; the app exposes eleven read operations and seven writes. Public website, privacy, terms and support destinations return HTTP 200. An initial disabled app card showing its internal ID and No description resolved after a fresh load; its correct Shareout metadata and action details now render normally. No persistent listing discrepancy was found. No new installation or end-to-end published-plugin workflow was performed during this review.
+
+### Cross-directory follow-up audit — 2026-10-21
+
+Fresh checks corrected two stale tracker entries: Cursor Directory is now published and appears in public directory search, with Unpublish in owner controls; Awesome MCP Servers approved Shareout on October 5 and its public listing is live at https://mcpservers.org/servers/shareout-io-agents. No duplicate submission or paid placement is needed.
+
+Three existing-submission follow-ups remain: Cline PR #179 is open, not draft and unmerged, with no discussion/review comments; Smithery is published but still indexes eight old tools, and the October 20 support refresh request has no reply in the checked mailbox; Vercel Connect still shows the original Service Submitted / API Key Configuration Valid result and no Shareout entry in catalog search. No approval email was found for Vercel. The separate in-app-browser Vercel form is an unsubmitted local draft and must not be mistaken for the original Chrome submission.
+
+PulseMCP still pauses submissions and listing changes. Claude curated distribution remains deferred; Docker withdrawn; Grok Bot closed unmerged; mcp.so paid intake remains unauthorized. These are not pending approval/publish buttons. Repository-based Claude/Codex/Gemini/skill distributions are available, but gallery indexing and authenticated workflows remain distinct. No new message, follow-up request, submission or grant was sent during this audit.

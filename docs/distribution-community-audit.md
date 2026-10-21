@@ -12,7 +12,7 @@ Do not open PRs against a host's core implementation or pursue curated first-par
 
 | Route | Mechanism and fit | Decision |
 | --- | --- | --- |
-| Cursor Directory | Community website; detects MCP and skill from Shareout's own public repository | Submitted at https://cursor.directory/plugins/shareout; security scan pending, currently unpublished/hidden |
+| Cursor Directory | Community website; detects MCP and skill from Shareout's own public repository | Published at https://cursor.directory/plugins/shareout; public directory search and owner Unpublish control verified 2026-10-21 |
 | Cursor Marketplace | Curated first-party application; declined in owner-shared email | Replaced by Cursor Directory; no appeal or repeat application planned |
 | Cline Marketplace | Vendor-maintained catalog explicitly invites new entry PRs; our PR changes only skill metadata and icon | Keep PR #179. It is OPEN, not draft; no changes to Cline's core implementation |
 | skills.sh / Skills CLI | Community skill discovery from public repositories and real installations | Keep the existing skill listing; no PR to Vercel core is required |
@@ -20,7 +20,7 @@ Do not open PRs against a host's core implementation or pursue curated first-par
 | Official MCP Registry | Open metadata publication under a verified publisher namespace, including remote-only servers | Keep; registry publication is metadata, not first-party endorsement |
 | Smithery | Independent MCP directory with its own remote-server publishing flow | Keep existing submission/listing |
 | Glama | Independent MCP directory; remote connectors accepted through website and ownership verification | Keep existing connector and isolated health profile |
-| Awesome MCP Servers / mcpservers.org | Independent directory explicitly accepts free submissions | Keep the existing submission; no duplicate or paid upgrade |
+| Awesome MCP Servers / mcpservers.org | Independent directory explicitly accepts free submissions | Existing listing approved and live; rechecked 2026-10-21; no duplicate or paid upgrade |
 | PulseMCP | Independent directory; previous intake check found submissions paused | Community fit; do not claim a submission while intake is paused |
 | mcp.so | Independent aggregator; previous intake required payment | Community fit in principle; no paid listing authorized or purchased |
 | Claude Code repository marketplace | Shareout-maintained public repository that users add themselves | Keep; distinct from Anthropic's curated directory |
@@ -52,3 +52,5 @@ The Cursor community form detected the existing hosted MCP and skill, accepted t
 - [Docker catalog contribution guide](https://github.com/docker/mcp-registry#contributing-to-the-docker-mcp-registry)
 - [OpenAI package and repository marketplaces](https://developers.openai.com/plugins/build/plugins) and [public submission](https://developers.openai.com/plugins/deploy/submission)
 - [Vercel Connect service submissions](https://vercel.com/changelog/vercel-connect-service-submissions)
+
+Publication-state correction (2026-10-21): the earlier pending Cursor scan is complete; Shareout appears in public directory search. Awesome MCP Servers is also live; the October 5 approval email and public listing were independently checked. Existing Cline, Smithery refresh and Vercel review follow-ups remain. PulseMCP still pauses intake.
