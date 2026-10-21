@@ -1,6 +1,6 @@
 # Distribution status
 
-Updated 2026-10-08. A valid package is not a directory approval or a complete host acceptance test.
+Updated 2026-10-20. A valid package is not a directory approval or a complete host acceptance test.
 
 | Route | Current state | Next requirement |
 | --- | --- | --- |
@@ -14,10 +14,10 @@ Updated 2026-10-08. A valid package is not a directory approval or a complete ho
 | Cursor Directory | [Community submission accepted](https://cursor.directory/plugins/shareout) 2026-10-08; one MCP, one skill and brand icon | Security scan pending; unpublished and hidden until it completes |
 | VS Code / GitHub Copilot | MCP configuration prepared | Host acceptance |
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
-| ChatGPT / Codex public directory | 0.2.0 uploaded; metadata, skill and eighteen-tool MCP scan pass with no findings; unpublished | Owner attestations/submission, review and later publication |
+| ChatGPT / Codex public directory | 0.2.0 submitted and approved; metadata, skill and eighteen-tool MCP scan have no findings; Ready to publish / Not published | Publication remains a separate action |
 | Claude directory | Deferred by the owner on 2026-10-02; existing repository package remains available | Revisit if a paid publisher account and product fit justify it |
-| Smithery | [Published](https://smithery.ai/servers/gregaeland/shareout) 2026-10-05; production 0.6.2 and all eight tools discovered | Full publish/update/revoke through Smithery remains a separate host acceptance test |
-| Glama | Ownership verified; existing tool index is stale and health is Unhealthy due to expired OAuth test credentials | Renew only the fictional reviewer workspace connection and recheck tools |
+| Smithery | [Existing listing](https://smithery.ai/servers/gregaeland/shareout) still shows eight tools; approved refresh request sent to support | Support refresh and full host workflow acceptance |
+| Glama | Owner Google sign-in restored; existing index and expired test credentials remain stale; personal Shareout consent cancelled | Complete fictional reviewer sign-in, renew only that workspace connection, and recheck tools |
 | PulseMCP | Submission pause rechecked 2026-10-05 | Wait for submissions to reopen |
 | Docker MCP Catalog | Withdrawn at owner request; PR #5462 closed without merge | Do not reopen without explicit request |
 | Awesome MCP Servers | Free submission accepted 2026-10-05; awaiting review | Directory says review within two weeks; contact email receives approval notice |
@@ -37,7 +37,7 @@ Docker catalog draft [PR #5462](https://github.com/docker/mcp-registry/pull/5462
 
 ## Current OpenAI submission
 
-2026-10-20: plugin 0.2.0 is uploaded as a new draft. Metadata and skill checks pass; a fresh scan of the deployed MCP 0.7.0 server discovers eighteen independent tools with no findings. Final owner attestations and submission remain pending; the OpenAI plugin is not published. Package 0.1.5 remains the previously approved version. The older submission narrative below is historical.
+2026-10-20: plugin 0.2.0 was uploaded with passing metadata and skill checks; a fresh scan of deployed MCP 0.7.0 discovers eighteen independent tools with no findings. After explicit owner approval, all six attestations were checked and the draft was submitted. The portal returned release `pluginrel_6623327047948191a75f24a04f661e81` and shows “0.2.0 · Approved”, “Ready to publish” and “Not published”. Publication was not performed. The older submission narrative below is historical.
 
 
 The owner completed final attestations and submission on 2026-10-05. The publisher portal independently shows Shareout “Version 1.0.0 · In review”, “Not published”, and “Configured”. The uploaded portable package is 0.1.5; the portal uses a separate associated-app version label. The final ZIP includes the accessible 6:01 labeled walkthrough URL, verified by anonymous HTTP 200 and SHA-256 match. Reviewer credentials were saved privately. Non-blocking MCP findings remain for reviewers. Earlier dated notes below describe the path to submission and are superseded by this status.
@@ -143,13 +143,13 @@ Public package [v0.2.0](https://github.com/geland/shareout-integrations/releases
 
 | Existing surface | Current update state | Remaining boundary |
 | --- | --- | --- |
-| OpenAI plugin | 0.2.0 uploaded; metadata, skill and eighteen-tool MCP scan have no findings | Owner attestations/submission; subsequent approval and publication |
+| OpenAI plugin | 0.2.0 submitted and approved; metadata, skill and eighteen-tool MCP scan have no findings; Ready to publish / Not published | Publication remains a separate action |
 | Official MCP Registry | io.shareout/shareout 0.7.0 published and independently verified | Host acceptance remains separate |
 | Claude/Codex repository marketplaces, Gemini, skill installations | Main source, manifests, skill and release ZIP updated | Existing clients must refresh/update; external crawler freshness is separate |
 | Cline community PR #179 | Existing description updated to package 0.2.0 / MCP 0.7.0; installation source unchanged | Maintainer review and actual Cline workflow acceptance |
 | Cursor Directory | Cached skill replaced and re-read with new operations | Security rescan running; listing hidden/unpublished during the scan |
-| Smithery | Owner Google sign-in restored; Releases UI says server updates were removed and require support | Public-information support request prepared; owner send approval pending; listing still shows eight tools |
-| Glama | Ownership verified; existing tool index is stale and health is Unhealthy due to expired OAuth test credentials | Renew only the fictional reviewer workspace connection and recheck tools |
+| Smithery | Owner Google sign-in restored; approved refresh email sent to support@smithery.ai with endpoint/version/public release | Support action pending; listing still shows eight tools |
+| Glama | Owner Google sign-in restored; existing index and expired test credentials remain stale; personal Shareout consent cancelled | Complete fictional reviewer sign-in, renew only that workspace connection, and recheck tools |
 | Grok Bot community PR #54 | Independently verified closed without merge on October 10 | No publication or reopening claimed |
 
 Docker remains withdrawn and Claude's curated directory remains deferred. No new paid listing or curated destination was submitted. Existing endpoint/config-only surfaces retain `https://shareout.io/mcp`; no replacement connection URL is required. Hosted compatibility protects clients using the previously approved definitions.
